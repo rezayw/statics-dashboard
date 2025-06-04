@@ -6,10 +6,6 @@ from app.db import base
 from app.routes import auth
 from app.routes import admin
 
-
-
-
-
 app = FastAPI(title=config.APP_NAME)
 
 app.include_router(upload.router, prefix=config.API_PREFIX, tags=["Upload"])

@@ -1,77 +1,72 @@
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1080px;
     margin: auto;
-    padding: 40px 20px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-top: 50px;
-    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3 {
     color: #333;
 }
 
-.upload-section {
-    margin-bottom: 30px;
+.upload-section form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-input[type="file"] {
-    padding: 8px;
-    margin-right: 10px;
+.file-section {
+    margin-top: 30px;
 }
 
-button {
-    padding: 8px 14px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.file-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .file-card {
-    background: #fafafa;
-    border-left: 4px solid #007bff;
-    padding: 16px;
-    margin-bottom: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-preview img,
+.file-preview video {
+    width: 100%;
+    border-radius: 6px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.file-info p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+button {
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
     border-radius: 4px;
 }
 
-.file-card img,
-.file-card video,
-.file-card embed {
-    margin-top: 10px;
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-.file-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.file-card form {
-    margin-top: 10px;
-}
-
-.file-card form button {
-    background-color: #dc3545;
-}
-
-.file-card form button:hover {
-    background-color: #bd2130;
+button:hover {
+    background: darkred;
 }

@@ -6,3 +6,4 @@ jinja2
 python-jose[cryptography]
 pydantic-settings
 passlib[bcrypt]
+pydantic[email]

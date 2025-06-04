@@ -33,3 +33,29 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000/docs
 
 
+# LOGIN API
+## PATH
+POST /api/register
+
+## JSON PAYLOAD
+{
+  "email": "admin@example.com",
+  "full_name": "Admin User",
+  "password": "yourpassword"
+}
+
+
+# REGISTER API
+## PATH
+POST /api/login
+
+
+## JSON PAYLOAD
+{
+  "email": "admin@example.com",
+  "password": "yourpassword"
+}
+
+# CONSUME
+const API_URL = "http://127.0.0.1:8000/api/files";
+const TOKEN = "YOUR_TOKEN_HERE"; 

@@ -1,61 +1,62 @@
-# PROJECT STRUCTURE
+# statics-dashboard
 
-project/
-├── app/
-│   ├── main.py
-│   ├── core/config.py
-│   ├── auth/jwt_handler.py
-│   ├── db/base.py
-│   ├── models/file.py
-│   ├── crud/file.py
-│   ├── routes/upload.py
-│   └── templates/admin.html
-├── static/
-│   ├── images/
-│   ├── videos/
-│   ├── pdfs/
-│   └── texts/
-├── requirements.txt
-└── .env
+Web static-dashboard app for uploading and fetch images, lightweight, using django uvicorn
 
-# RUNNING PROGRAM
+## Features
+- Auto convert to webp for image exension
+- Authentication
+- Image listing
+- Authorization fetch
 
+## RUNNING PROGRAM
+
+```bash
 python -m venv venv
 source venv/bin/activate  # untuk macOS/Linux
 venv\Scripts\activate     # untuk Windows
+```
 
-# RUNNING API
+## RUNNING API
 
+```bash
 uvicorn app.main:app --reload
+```
 
-# CHECK API DOCS (SWAGGER)
+## CHECK API DOCS (SWAGGER)
+
+```bash
 
 http://127.0.0.1:8000/docs
 
+```
 
-# LOGIN API
-## PATH
+## LOGIN & REGISTER API
+```bash
+# Register
 POST /api/register
+```bash
 
-## JSON PAYLOAD
+#JSON PAYLOAD
 {
   "email": "admin@example.com",
   "full_name": "Admin User",
   "password": "yourpassword"
 }
+```
 
-
-# REGISTER API
-## PATH
+```bash
+#Login
 POST /api/login
 
-
-## JSON PAYLOAD
+#JSON PAYLOAD
 {
   "email": "admin@example.com",
   "password": "yourpassword"
 }
+```
 
 # CONSUME
+```bash
 const API_URL = "http://127.0.0.1:8000/api/files";
-const TOKEN = "YOUR_TOKEN_HERE"; 
+const TOKEN = "YOUR_TOKEN_HERE";
+```

@@ -4,16 +4,16 @@ Web static-dashboard app for uploading and fetch images, lightweight, using djan
 
 ## Features
 - Auto convert to webp for image exension
+- Authorization fetch cosume
+- Image listing and Preview
 - Authentication
-- Image listing
-- Authorization fetch
 
 ## RUNNING PROGRAM
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # untuk macOS/Linux
-venv\Scripts\activate     # untuk Windows
+source venv/bin/activate  # for macOS/Linux
+venv\Scripts\activate     # for Windows
 ```
 
 ## RUNNING API
